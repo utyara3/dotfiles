@@ -3,13 +3,13 @@
 ## Showcase
 
 ### Рабочий стол 
-![Workspace](showcase/workspace.png)
+![Workspace](showcases/workspace.png)
 
 ### Rofi
-![Rofi](showcase/rofi.png)
+![Rofi](showcases/rofi.png)
 
 ### Rofi Cliphist
-![Rofi Cliphist](showcase/rofi_cliphist.png)
+![Rofi Cliphist](showcases/rofi_cliphist.png)
 
 ### SwayNC
-![SwayNC](screenshots/swaync.png)
+![SwayNC](showcases/swaync.png)
