@@ -1,0 +1,25 @@
+# Neovim
+nvim/parser/           # Скомпилированные tree-sitter парсеры
+nvim/.luarc.json       # Генерируется автоматически
+nvim/.neoconf.json     # Генерируется автоматически
+nvim/lazy-lock.json    # Лок-файл плагинов (можно коммитить, но лучше нет)
+
+# Кэши и временные файлы
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# История и секреты
+home/.zsh_history
+home/.bash_history
+*.secret
+*.key
+
+# Большие файлы (картинки)
+hypr/images/*.jpg
+hypr/images/*.png
+
+# Логи
+*.log

@@ -1,0 +1,83 @@
+configuration {
+    show-icons: true;
+    icon-theme: "Tela-purple-dark";
+    display-columns: 1;
+    lines: 15;
+    width: 70%;
+    hide-scrollbar: true;
+    disable-history: false;
+    markup-rows: true;
+}
+
+* {
+    bg: #19142DD9;
+    bg-alt: #0F0C1EB3;
+    fg: #CDD6F4;
+    fg-alt: #A6ADC8;
+    accent: #7850DC99;
+    accent-alt: #6478FFCC;
+    border-color: #6478FF66;
+    background-color: transparent;
+    text-color: @fg;
+    font: "Inter 11";
+}
+
+window {
+    background-color: @bg;
+    border: 2px;
+    border-color: @border-color;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+mainbox {
+    spacing: 10px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border: 1px;
+    border-color: @accent-alt;
+    border-radius: 8px;
+    padding: 10px;
+    spacing: 10px;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: @accent-alt;
+    font-weight: bold;
+}
+
+entry {
+    placeholder: "Поиск...";
+    placeholder-color: @fg-alt;
+}
+
+listview {
+    lines: 15;
+    spacing: 5px;
+    scrollbar: false;
+}
+
+element {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    spacing: 10px;
+}
+
+element selected normal {
+    background-color: @accent;
+    text-color: #ffffff;
+    font-weight: bold;
+}
+
+element-text {
+    highlight: bold;
+}
+
+element-icon {
+    size: 32px;
+    border-radius: 6px;
+}

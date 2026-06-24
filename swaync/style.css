@@ -1,0 +1,136 @@
+/* ===== Nord Color Palette ===== */
+@define-color polar-night-0 #2E3440;
+@define-color polar-night-1 #3B4252;
+@define-color polar-night-2 #434C5E;
+@define-color polar-night-3 #4C566A;
+
+@define-color snow-storm-0 #D8DEE9;
+@define-color snow-storm-1 #E5E9F0;
+@define-color snow-storm-2 #ECEFF4;
+
+@define-color frost-1 #88C0D0;
+@define-color frost-2 #81A1C1;
+
+/* ===== Окно уведомлений (всплывающее) ===== */
+.notification {
+    background: rgba(46, 52, 64, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: @snow-storm-0;
+    padding: 12px 14px;
+    margin: 8px;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.notification .summary {
+    color: @frost-1;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.notification .body {
+    color: @snow-storm-1;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* ===== Центр уведомлений ===== */
+.control-center {
+    background: rgba(59, 66, 82, 0.9);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    color: @snow-storm-0;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Заголовок */
+.control-center .title {
+    color: @frost-1;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/* Уведомления в центре */
+.control-center .notification-row {
+    background: rgba(46, 52, 64, 0.5);
+    border-radius: 8px;
+    margin: 6px 0;
+    padding: 10px 12px;
+}
+
+.control-center .notification-row .summary {
+    color: @frost-1;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.control-center .notification-row .body {
+    color: @snow-storm-0;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.control-center .notification-row .time {
+    display: none;
+}
+
+/* Кнопка закрытия */
+.control-center .close-button {
+    background: rgba(191, 97, 106, 0.4);
+    color: @snow-storm-0;
+    border-radius: 6px;
+    padding: 4px 10px;
+    margin-left: 8px;
+}
+
+.control-center .close-button:hover {
+    background: rgba(191, 97, 106, 0.6);
+}
+
+/* Скроллбар скрыт */
+.control-center scrollbar {
+    opacity: 0;
+}
+
+/* Виджеты */
+.widget {
+    background: rgba(67, 76, 94, 0.3);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin: 10px 0;
+}
+
+.widget label {
+    color: @snow-storm-0;
+    font-size: 14px;
+}
+
+.widget.dnd:checked {
+    background: rgba(94, 129, 172, 0.3);
+}

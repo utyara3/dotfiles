@@ -1,0 +1,14 @@
+configuration {
+	modes: "window,drun,run,ssh";
+	font: "FiraCode 15";
+	location: 0;
+	fixed-num-lines: false;
+	show-icons: true;
+	terminal: "kitty";
+	sort: true;
+	eh: 1;
+	matching: "fuzzy";
+	window-format: "{w}    {c}   {t}";
+}
+
+@theme "sidebar"

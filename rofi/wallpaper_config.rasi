@@ -1,0 +1,9 @@
+configuration {
+	modes: "drun";
+	font: "FiraCode 15";
+	show-icons: true;
+	terminal: "kitty";
+	matching: "fuzzy";
+}
+
+@theme "wallpaper-grid"
