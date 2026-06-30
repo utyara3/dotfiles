@@ -7,7 +7,7 @@ configuration {
 	terminal: "kitty";
 	sort: true;
 	eh: 1;
-	matching: "fuzzy";
+// matching: "fuzzy";
 	window-format: "{w}    {c}   {t}";
 }
 

@@ -13,6 +13,9 @@ alias clock='tty-clock -c -s -b -C 5'
 alias clc="fc -ln -1 | wl-copy"
 alias hist="history -i | grep $(date +%F)"
 alias notes="nvim ~/Documents/helper/"
+# Happ Proxy
+alias vpn-on='export http_proxy=http://127.0.0.1:10809 https_proxy=http://127.0.0.1:10809 all_proxy=socks5://127.0.0.1:10808'
+alias vpn-off='unset http_proxy https_proxy all_proxy'
 
 bindkey '^H' backward-kill-word
 
